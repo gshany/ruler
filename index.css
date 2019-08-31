@@ -1,0 +1,53 @@
+.container {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #333;
+    height: 50px;
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.select {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+}
+
+.select li {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.select li span{
+    position: absolute;
+    /* 需要向左边偏移自身宽度的一半 */
+    /* translateX中的百分比，相对的是自身的尺寸 */
+    transform: translateX(-50%);
+    top: 5px;
+}
+
+.select li i{
+    position: absolute;
+    width: 1px;
+    height: 14px;
+    background: #aaa;
+    bottom: 5px;
+}
+
+.center-mark{
+    position: absolute;
+    width: 4px;
+    height: 46px;
+    top: 2px;
+    background: #f40;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
